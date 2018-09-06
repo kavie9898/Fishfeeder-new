@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fishfeeder-new</string>
+
+    <string name="question_prompt">Choose Question number</string>
+
+    <string-array name="question_arrays">
+        <item>1. What is your primary first school?</item>
+        <item>2. What is your grandparent name?</item>
+        <item>3. Where is your birth place?</item>
+
+    </string-array>
+</resources>

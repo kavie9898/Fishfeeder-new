@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fishfeeder_new">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/fyp"
+        android:label="Fish Feeder System"
+        android:roundIcon="@mipmap/fyp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login" />
+        <activity android:name=".register" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".WaterLevelHistory" />
+        <activity android:name=".feedback" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".ViewFeedback" />
+        <activity android:name=".Images" />
+        <activity android:name=".FeedLevelHistory" />
+        <activity android:name=".FeedLevelActivity" />
+        <activity android:name=".AdminHomepage" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".AdminManageFeedback" />
+        <activity android:name=".AdminManageUser" />
+        <activity android:name=".AdminShowUser" />
+        <activity android:name=".AdminUpdateUser" />
+        <activity android:name=".AdminShowFeedback" />
+        <activity android:name=".AdminUpdateFeedback" />
+        <activity android:name=".ViewFeedHistory"></activity>
+    </application>
+
+</manifest>

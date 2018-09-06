@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.fishfeeder_new.AdminUpdateUser"
+        android:background="@color/backgroundcolor">
+
+        <TextView
+            android:text="Update Record Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textColor="@color/black_overlay"
+            android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/UpdateButton"
+        android:layout_alignRight="@+id/UpdateButton"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:background="@color/lightgray"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="20dp"
+        android:background="@color/lightgray"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/editStatus"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="17dp"
+        android:background="@color/lightgray"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Y or N only"
+        android:digits="YN"
+        android:inputType="textCapWords"
+
+        android:maxLength="1"
+        android:textAllCaps="true"
+        android:textColor="#000" />
+
+        <Button
+            android:text="Update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editStatus"
+            android:id="@+id/UpdateButton" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editEmail"
+        android:layout_alignBottom="@+id/editEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:text="Email"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editName"
+        android:layout_alignBottom="@+id/editName"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:text="Name"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editStatus"
+        android:layout_alignBottom="@+id/editStatus"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:text="Status"
+        android:textSize="22dp" />
+
+</RelativeLayout>

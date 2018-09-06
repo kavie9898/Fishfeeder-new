@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/user" android:text="User"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/status" android:text="Status"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/level" android:text="Level"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/date" android:text="Date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/time" android:text="Time"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </TableRow>
+        <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+        <ListView
+            android:id="@android:id/list"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </ListView>
+    </TableLayout>
+
+
+</RelativeLayout>
